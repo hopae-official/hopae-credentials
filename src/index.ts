@@ -1,8 +1,6 @@
-import Creds from './Credentials'
-import { SimpleSigner as S } from 'did-jwt'
-import { ContractFactory as CF } from './Contract'
+import Credentials from './Credentials'
+import { SimpleSigner } from 'did-jwt'
+import { ContractFactory } from './Contract'
 
-export const Credentials = Creds
-export const SimpleSigner = S
-export const ContractFactory = CF
+export { Credentials, SimpleSigner, ContractFactory }
 export default { Credentials, SimpleSigner, ContractFactory }
