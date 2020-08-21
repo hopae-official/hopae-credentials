@@ -1,6 +1,6 @@
 {
   "name": "hopae-credentials",
-  "version": "0.1.0-beta.1",
+  "version": "0.1.1-beta.1",
   "description": "Library for interacting with Hopae profiles and attestations",
   "main": "lib/index.js",
   "umd:main": "lib/index.umd.js",
@@ -26,7 +26,10 @@
     "draft-release-notes": "GREN_GITHUB_TOKEN=$(vault read -field=value secret/mobile/release_token) gren release -d",
     "publish-release-notes": "GREN_GITHUB_TOKEN=$(vault read -field=value secret/mobile/release_token) gren release"
   },
-  "author": "Ace Shim <ace@hopae.app>",
+  "contributors": [
+    "Ace Shim <ace@hopae.app>",
+    "Gavin Kim <gavin@hopae.app>"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/hopae-official/hopae-credentials.git"
