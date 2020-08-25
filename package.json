@@ -1,6 +1,6 @@
 {
   "name": "hopae-credentials",
-  "version": "0.1.1-beta.1",
+  "version": "0.1.2-beta.1",
   "description": "Library for interacting with Hopae profiles and attestations",
   "main": "lib/index.js",
   "umd:main": "lib/index.umd.js",

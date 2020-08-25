@@ -166,7 +166,8 @@ interface Verification extends JWTPayload {
 interface VerificationParam {
   pid: string
   sid: string
-  sub: string
+  aud: string
+  sub?: string
   claim: any
   exp?: number
   vc?: string[]
@@ -525,8 +526,8 @@ class Credentials {
    * @param    {String}            credential.exp         time at which this claim expires and is no longer valid (seconds since epoch)
    * @return   {Promise<Object, Error>}                   a promise which resolves with a credential (JWT) or rejects with an error
    */
-  createVerification({ pid, sid, sub, claim, exp, vc, callbackUrl }: VerificationParam) {
-    return this.signJWT({ pid, sid, sub, claim, exp, vc, callbackUrl })
+  createVerification({ pid, sid, aud, sub, claim, exp, vc, callbackUrl }: VerificationParam) {
+    return this.signJWT({ pid, sid, aud, sub, claim, exp, vc, callbackUrl })
   }
 
   /**
